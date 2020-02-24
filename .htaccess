@@ -1,0 +1,4 @@
+AuthUserFile /opt/zimbra/common/share/webui/.htpasswd
+AuthName "User and Password"
+AuthType Basic
+Require valid-user
