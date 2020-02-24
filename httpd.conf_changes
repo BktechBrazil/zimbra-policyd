@@ -1,0 +1,15 @@
+#ALTERADO "index.php" no final:
+
+<IfModule dir_module>
+DirectoryIndex index.html index.html.var index.php
+</IfModule>
+
+
+#ADICIONA NO FINAL DO ARQUIVO a proteção do diretório do policyd:
+
+Alias /webui /opt/zimbra/common/share/webui/
+<Directory /opt/zimbra/common/share/webui/>
+AllowOverride AuthConfig
+Order Deny,Allow
+Allow from all
+</Directory>
